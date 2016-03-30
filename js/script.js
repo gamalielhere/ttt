@@ -35,7 +35,6 @@
         if(painted[num - 1] === false){
             if(move % 2 === 0){
                 content[num - 1] = 'X';
-                $body.css('background-color', 'white');
                 boxEl.classList.add("selectedX");
             } else {
                 content[num - 1] = 'O';
