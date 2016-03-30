@@ -1,0 +1,50 @@
+/* ALL */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+  }
+
+  body {
+    font-family: "Open Sans", "Comic Sans MS", "Helvetica";
+    color: #96A8FC;
+    text-align: center;
+    background-color: black;
+  }
+
+/* CANVAS */
+  div {
+    width: 450px;
+    height: 450px;
+    border: 2px solid #96A8FC;
+    margin:0 auto;
+    padding:0;
+  }
+
+  .box {
+    width: 125px;
+    height: 125px;
+    border: 1px solid #96A8FC;
+    margin:10px 10px;
+    display: inline-block;
+  }
+
+  .selectedO {
+    background-image: url("../images/red-saber.png");
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+  }
+
+  .selectedX {
+    background-image: url("../images/blue-saber.png");
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+  }
+
+  .yoda {
+    display: none;
+  }
+  .doku {
+    display: none;
+  }
