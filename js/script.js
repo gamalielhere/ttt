@@ -25,13 +25,13 @@
 
 //Game mechanics
     function boxClicked(num){
-        boxes = "box" + num;
-        boxEl = document.getElementById(boxes);
-        $("body").animate({
+        $('body').animate({
             backgroundColor: "#fff"
-          }, 100).animate({
+          }, 200).animate({
             backgroundColor: "#000"
           }, 100);
+        boxes = "box" + num;
+        boxEl = document.getElementById(boxes);
         if(painted[num - 1] === false){
             if(move % 2 === 0){
                 content[num - 1] = 'X';
