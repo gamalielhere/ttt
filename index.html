@@ -11,8 +11,12 @@
     </head>
     <body>
         <header>
-          <h1><img src="images/logo2.png" alt="Star wars font"></h1>
-          <a onclick="playAgain()"><img src="images/button.png" alt=""></a>
+          <div class='header__container'>
+            <img src="images/logo2.png" alt="Star wars font" class='header__container__image'>
+          </div>
+          <div onclick="playAgain()" class='restart__container'>
+            <img src="images/button.png" alt="" class='restart__container__image'>
+          </div>
         </header>
         <div id="divMain">
           <div class="box" id="box1" onclick="boxClicked(1)"></div>

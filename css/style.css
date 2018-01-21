@@ -1,50 +1,69 @@
-/* ALL */
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-  }
+body {
+  background-color: black;
+  color: #96A8FC;
+  font-family: "Open Sans", "Comic Sans MS", "Helvetica";
+  text-align: center;
+}
 
-  body {
-    font-family: "Open Sans", "Comic Sans MS", "Helvetica";
-    color: #96A8FC;
-    text-align: center;
-    background-color: black;
-  }
+.header__container {
+  width: 100%;
+}
+
+.header__container__image {
+  max-width: 670px;
+  width: 100%;
+}
+
+.restart__container {
+  cursor: pointer;
+  width: 100%;
+}
+
+.restart__container__image {
+  max-width: 358px;
+  width: 100%;
+}
 
 /* CANVAS */
-  div {
-    width: 450px;
-    height: 450px;
-    border: 2px solid #96A8FC;
-    margin:0 auto;
-    padding:0;
-  }
+#divMain {
+  border: 2px solid #96A8FC;
+  height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  width: 450px;
+}
 
-  .box {
-    width: 125px;
-    height: 125px;
-    border: 1px solid #96A8FC;
-    margin:10px 10px;
-    display: inline-block;
-  }
+.box {
+  border: 1px solid #96A8FC;
+  cursor: pointer;
+  display: inline-block;
+  height: 125px;
+  margin: 10px 10px;
+  width: 125px;
+}
 
-  .selectedO {
-    background-image: url("../images/red-saber.png");
-    background-size: 125px 125px;
-    background-repeat: no-repeat;
-  }
+.selectedO {
+  background-image: url("../images/red-saber.png");
+  background-repeat: no-repeat;
+  background-size: 125px 125px;
+}
 
-  .selectedX {
-    background-image: url("../images/blue-saber.png");
-    background-size: 125px 125px;
-    background-repeat: no-repeat;
-  }
+.selectedX {
+  background-image: url("../images/blue-saber.png");
+  background-repeat: no-repeat;
+  background-size: 125px 125px;
+}
 
-  .yoda {
-    display: none;
-  }
-  .doku {
-    display: none;
-  }
+.yoda {
+  display: none;
+}
+
+.doku {
+  display: none;
+}
