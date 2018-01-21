@@ -12,9 +12,14 @@ var y;
 
 //Game mechanics
 function boxClicked(num){
+  const bodyStyle = document.body.classList;
   boxes = "box" + num;
   boxEl = document.getElementById(boxes);
-  $('body').animate({backgroundColor: "#fff"}, 200).animate({backgroundColor: "#000"}, 100);
+
+  bodyStyle.add('whiteBackground');
+  setTimeout(function() {
+    bodyStyle.remove('whiteBackground');
+  }, 100);
   if(painted[num - 1] === false) {
     if(move % 2 === 0) {
       content[num - 1] = 'X';
@@ -55,7 +60,7 @@ function checkWhoWon(sign){
 }
 
 function playAgain(){
-  location.reload(true);
+  window.location.reload();
 }
 
 (function(){

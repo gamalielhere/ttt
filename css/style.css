@@ -11,6 +11,10 @@ body {
   text-align: center;
 }
 
+.whiteBackground {
+  background-color: white;
+}
+
 .header__container {
   width: 100%;
 }
