@@ -15,7 +15,6 @@ function boxClicked(num){
   boxes = "box" + num;
   boxEl = document.getElementById(boxes);
   $('body').animate({backgroundColor: "#fff"}, 200).animate({backgroundColor: "#000"}, 100);
-
   if(painted[num - 1] === false) {
     if(move % 2 === 0) {
       content[num - 1] = 'X';
